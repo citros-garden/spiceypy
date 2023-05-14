@@ -2,7 +2,7 @@
 <?xml-model href="http://download.ros.org/schema/package_format3.xsd" schematypens="http://www.w3.org/2001/XMLSchema"?>
 <package format="3">
   <name>spiceypy_cassini</name>
-  <version>0.0.0</version>
+  <version>0.0.1</version>
   <description>Simple Spiceypy example showing the position of the Cassini spacecraft relative to the barycenter of Saturn</description>
   <maintainer email="gleb@lulav.space">ros</maintainer>
   <license>TODO: License declaration</license>

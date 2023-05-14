@@ -12,7 +12,7 @@ class spiceypy_cassini(Node):
         
         self.state_pub = self.create_publisher(Float64MultiArray , '/spiceypy_cassini/state', 10)
 
-        self.get_logger().info(f"Starting spiceypy_cassini version = 0.0.0")
+        self.get_logger().info(f"Starting spiceypy_cassini version = 0.0.1")
 
         #Defining inputs
         self.declare_parameter('start_t', 'Jun 20, 2004') # Time must be in format 'MMM DD, YYYY'
