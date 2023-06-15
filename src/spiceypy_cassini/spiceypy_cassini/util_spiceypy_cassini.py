@@ -1,10 +1,11 @@
 import spiceypy as spice
+import os
 
 def run(ros_node, start_t, finish_t, num_steps):
 
     ros_node.get_logger().info(f"Starting simulation...")
 
-    spice.furnsh("/workspaces/Spiceypy/src/spiceypy_cassini/resource/cassMetaK.txt")
+    spice.furnsh("/workspaces/spiceypy/install/spiceypy_cassini/share/spiceypy_cassini/resource/cassMetaK.txt")
 
     step = num_steps
     # we are going to get positions between these two dates

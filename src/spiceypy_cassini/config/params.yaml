@@ -1,7 +1,7 @@
 spiceypy_cassini:
   ros__parameters:
     start_t: "Jun 20, 2004"
-    finish_t: "Dec 1, 2005"
-    num_steps: 4000
+    finish_t: "Dec 1, 2004"
+    num_steps: 400
     publish_freq: 10.0
     
