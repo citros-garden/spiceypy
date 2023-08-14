@@ -13,7 +13,7 @@ You can find more information about orbital mechanics simulations with Poliastro
 2. To use Docker inside VS Code several extensions are required. Install [Dev Containers](https://marketplace.visualstudio.com/items?itemName=ms-vscode-remote.remote-containers) and [Docker](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-docker) extensions from Extensions tab on your left control panel.
 3. Clone the repository:
 ```bash 
-#TODO
+git clone git@github.com:citros-garden/spiceypy.git
 ```
 
 # Build 🛰
@@ -70,7 +70,23 @@ ros2 launch <selected_example> launch.py
 # Citros usage 🛸
 Although you can get simulation results using FoxGlove, the best way to work with such simulations and process the results is Citros! With its power, it is possible to create complex data processing scenarios, including the construction of more complex graphs, mathematical analysis and other high-level processing methods.
 
-# Develope
+## Citros integration
+1. Build Docker image:
+```bash
+docker build -t spiceypy .
+# OR *** when building from MAC M1 chip add FROM --platform=linux/amd64 ***
+docker buildx build --platform linux/amd64 -t spiceypy .   
+```
+2. Login to Citros
+ ```bash
+citros login
+citros docker-login
+```
+3. Tag your project and push it into Citros cloud
+ ```bash
+docker tag spiceypy us-central1-docker.pkg.dev/citros/lulav/spiceypy
+docker push us-central1-docker.pkg.dev/citros/lulav/spiceypy
+```
 
 
 # Extras
