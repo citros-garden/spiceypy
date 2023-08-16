@@ -1,4 +1,4 @@
-![png](/docs/img/example0.png "Maneuver example from Spiceypy docs")
+![png](/docs/img/Example0.png "Maneuver example from Spiceypy docs")
 # General Information 🌍
 This project contains one simple example using SpiceyPy (python version of NASA NAIF Spice) lib for Python 3. `Spiceypy_cassini` returns cassini spacecraft orbital trajectory relative to the barycenter of Saturn between given time bounds. The input parameters are: ```start_t```, ```finish_t``` and ```num_steps```. All of them  can be set in the [params.yaml config file](/src/spiceypy_cassini/config/params.yaml). The result is an ephemerides of orbit (actually a part of it between given time bounds) around Saturn barycenter. All the calculations defined in [util_spiceypy_cassini.py file](/src/spiceypy_cassini/spiceypy_cassini/util_spiceypy_cassini.py).
 Another important file is [spiceypy_cassini.py file](/src/spiceypy_cassini/spiceypy_cassini/spiceypy_cassini.py), which contains ROS 2 node  - it's used to call simulation function, get the results and publish it via ROS topics. You also can set publishing frequency (```publish_freq```) in the [params.yaml config file](/src/spiceypy_cassini/config/params.yaml) (more info about this file below).
@@ -92,5 +92,5 @@ docker push us-central1-docker.pkg.dev/citros/lulav/spiceypy
 
 # Extras
 
-![png](/docs/img/example1.png "Results example")
+![png](/docs/img/Example1.png "Results example")
 
