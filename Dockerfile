@@ -42,7 +42,7 @@ WORKDIR /workspaces/Spiceypy
 COPY . .
 RUN colcon build
 
-RUN pip install citros==23.17.7
+RUN pip install citros
 
 RUN chmod +x ros2_entrypoint.sh
 ENTRYPOINT ["/workspaces/Spiceypy/ros2_entrypoint.sh"]
