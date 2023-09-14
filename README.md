@@ -19,7 +19,7 @@ git clone git@github.com:citros-garden/spiceypy.git
 2. Navigate to the lower-left corner of VS Code window and click on green mark.
 3. Select "Reopen in container" option in the list on the top of the VS Code window. Wait a minute while Docker container is starting.
 4. Open ```/src/spiceypy_cassini/config/params.xml``` file to set parameters for simulation or just keep it default. Don't forget to save your changes!
-5. Build ROS2 environment:
+5. Build ROS 2 environment:
 ```bash 
 colcon build
 ```
