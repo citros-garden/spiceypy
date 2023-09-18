@@ -62,7 +62,7 @@ Although the best way to process simulation results is CITROS notebook.
 # Run 🚀
 1. Go back to the VS Code.
 2. Prepare your FoxGlove studio (previous step, if you haven't done it yet).
-3. Launch selected ROS2 package:
+3. Launch selected ROS 2 package:
 ```bash 
 ros2 launch spiceypy_cassini launch.py
 ```
