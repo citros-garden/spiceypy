@@ -38,13 +38,13 @@ RUN sudo apt-get update && apt-get install -y \
     && rm -rf /var/lib/apt/lists/* 
 RUN  pip install mcap-ros2-support
 
-WORKDIR /workspaces/Spiceypy
+WORKDIR /workspaces/spiceypy
 COPY . .
 RUN colcon build
 
-RUN pip install citros==23.17.7
+RUN pip install citros
 
 RUN chmod +x ros2_entrypoint.sh
-ENTRYPOINT ["/workspaces/Spiceypy/ros2_entrypoint.sh"]
+ENTRYPOINT ["/workspaces/spiceypy/ros2_entrypoint.sh"]
 
 CMD ["bash"]

@@ -19,7 +19,7 @@ git clone git@github.com:citros-garden/spiceypy.git
 2. Navigate to the lower-left corner of VS Code window and click on green mark.
 3. Select "Reopen in container" option in the list on the top of the VS Code window. Wait a minute while Docker container is starting.
 4. Open ```/src/spiceypy_cassini/config/params.xml``` file to set parameters for simulation or just keep it default. Don't forget to save your changes!
-5. Build ROS2 environment:
+5. Build ROS 2 environment:
 ```bash 
 colcon build
 ```
@@ -62,28 +62,28 @@ Although the best way to process simulation results is CITROS notebook.
 # Run 🚀
 1. Go back to the VS Code.
 2. Prepare your FoxGlove studio (previous step, if you haven't done it yet).
-3. Launch selected ROS2 package:
+3. Launch selected ROS 2 package:
 ```bash 
 ros2 launch spiceypy_cassini launch.py
 ```
 4. Watch the FoxGlove plot built from results!
 
-# Citros usage 🛸
-Although you can get simulation results using FoxGlove, the best way to work with such simulations and process the results is Citros! With its power, it is possible to create complex data processing scenarios, including the construction of more complex graphs, mathematical analysis and other high-level processing methods.
+# CITROS usage 🛸
+Although you can get simulation results using FoxGlove, the best way to work with such simulations and process the results is CITROS! With its power, it is possible to create complex data processing scenarios, including the construction of more complex graphs, mathematical analysis and other high-level processing methods.
 
-## Citros integration
+## CITROS integration
 1. Build Docker image:
 ```bash
 docker build -t spiceypy .
 # OR *** when building from MAC M1 chip add FROM --platform=linux/amd64 ***
 docker buildx build --platform linux/amd64 -t spiceypy .   
 ```
-2. Login to Citros
+2. Login to CITROS
  ```bash
 citros login
 citros docker-login
 ```
-3. Tag your project and push it into Citros cloud
+3. Tag your project and push it into CITROS cloud
  ```bash
 docker tag spiceypy us-central1-docker.pkg.dev/citros/lulav/spiceypy
 docker push us-central1-docker.pkg.dev/citros/lulav/spiceypy
