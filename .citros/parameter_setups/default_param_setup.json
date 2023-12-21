@@ -1,0 +1,14 @@
+{
+    "packages": {
+        "spiceypy_cassini": {
+            "spiceypy_cassini": {
+                "ros__parameters": {
+                    "finish_t": "Dec 1, 2005",
+                    "num_steps": 4000,
+                    "publish_freq": 10.0,
+                    "start_t": "Jun 20, 2004"
+                }
+            }
+        }
+    }
+}
