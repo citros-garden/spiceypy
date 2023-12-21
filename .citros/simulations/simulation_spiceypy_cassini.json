@@ -1,0 +1,14 @@
+{
+    "CPU": 2,
+    "GPU": 2,
+    "MEM": 1024,
+    "description": "Default simulation. Change the values according to your needs.",
+    "id": "b8dee6e2-eaad-4377-9f1a-38a2deb73846",
+    "launch": {
+        "file": "spiceypy_cassini.launch.py",
+        "package": "spiceypy_cassini"
+    },
+    "parameter_setup": "default_param_setup.json",
+    "storage_type": "MCAP",
+    "timeout": 180
+}

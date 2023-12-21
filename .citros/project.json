@@ -1,0 +1,63 @@
+{
+    "citros_cli_version": "0.1.7",
+    "cover": "",
+    "description": "",
+    "git": "git@github.com:citros-garden/spiceypy.git",
+    "is_active": true,
+    "launches": [],
+    "packages": [
+        {
+            "cover": "",
+            "description": "Simple Spiceypy example showing the position of the Cassini spacecraft relative to the barycenter of Saturn",
+            "git": "",
+            "launches": [
+                {
+                    "description": "",
+                    "name": "spiceypy_cassini.launch.py",
+                    "path": "src/spiceypy_cassini/launch/spiceypy_cassini.launch.py"
+                }
+            ],
+            "maintainer": "ros",
+            "maintainer_email": "gleb@lulav.space",
+            "name": "spiceypy_cassini",
+            "nodes": [
+                {
+                    "entry_point": "spiceypy_cassini.spiceypy_cassini:main",
+                    "name": "spiceypy_cassini",
+                    "parameters": [
+                        {
+                            "description": "Parameter loaded from config.yaml",
+                            "name": "start_t",
+                            "parameterType": "str",
+                            "value": "Jun 20, 2004"
+                        },
+                        {
+                            "description": "Parameter loaded from config.yaml",
+                            "name": "finish_t",
+                            "parameterType": "str",
+                            "value": "Dec 1, 2005"
+                        },
+                        {
+                            "description": "Parameter loaded from config.yaml",
+                            "name": "num_steps",
+                            "parameterType": "int",
+                            "value": 4000
+                        },
+                        {
+                            "description": "Parameter loaded from config.yaml",
+                            "name": "publish_freq",
+                            "parameterType": "float",
+                            "value": 10.0
+                        }
+                    ],
+                    "path": "src/spiceypy_cassini/spiceypy_cassini/spiceypy_cassini.py"
+                }
+            ],
+            "package_xml": "src/spiceypy_cassini/package.xml",
+            "parameters": {},
+            "path": "src/spiceypy_cassini",
+            "setup_py": "src/spiceypy_cassini/setup.py"
+        }
+    ],
+    "tags": []
+}
